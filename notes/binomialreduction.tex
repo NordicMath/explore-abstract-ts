@@ -1,0 +1,31 @@
+
+\section{Binomial reduction}
+
+\begin{definition}
+  Let $F$ be the forgetful functor $BRing_\lambda \to Ring_\lambda$
+\end{definition}
+
+\begin{definition}
+  Let $G$ be the functor $Ring_\lambda \to BRing_\lambda$, ??? Ideas:
+  \begin{enumerate}
+    \item $G(X)$ is $X/\langle\psi^k(x) - x\rangle$
+    \item $G(X)$ is TS(monoid of idempotents and 1-dimensional)
+  \end{enumerate}
+\end{definition}
+
+\begin{proposition}
+  We have:
+  \begin{enumerate}
+    \item $G(X) = X$ if $X$ is a binomial ring
+    \item $G(TS_R(M)) = R$ if $R$ is a binomial ring
+    \item 
+  \end{enumerate}
+\end{proposition}
+
+\begin{theorem}
+  There is an adjunction $$Hom_{BRing_\lambda}(X, G(Y)) \cong Hom_{Ring_\lambda}(F(X), Y)$$
+\end{theorem}
+
+\begin{corollary}
+  This induces a morphism $R \to F(G(R))$, and we can exclude $F$ since the morphisms are the same: $R \to G(R)$. This means that all $\lambda$-rings are augmented over some binomial ring. 
+\end{corollary}
