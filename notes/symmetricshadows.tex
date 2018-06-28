@@ -43,6 +43,10 @@
   where $R$ and $R'$ are resp. the shadow realms of $\Gamma$ and $\Gamma'$ and $\Upsilon_{\phi}$ is defined as the morphism induced from applying the shadow part of $\phi$ to each point in the symmetry-realm of $\Upsilon_R$ and of course as well to its shadow realm.
 \end{propdef}
 
+\begin{proof}
+  Say $\phi = (f, g)$. We need to show that $\Upsilon_{\phi} \circ \Psi_\Gamma = \Psi_{\Gamma'} \circ \phi$. The shadow part is given by $g \circ id = id \circ g$, which is of course true, and the symmetric part is given by $g^{\mathbb{N}} \circ (r \mapsto k \mapsto \upsilon(\psi^k(r))) = (r \mapsto k \mapsto \upsilon'(\psi^k(r))) \circ f$. If we type this out using a single element $r$ and $k$, we get $g(\upsilon(\psi^k(r))) = \upsilon'(\psi^k(f(r)))) = \upsilon'(f(\psi^k(r)))$. This is true because $g(\upsilon(x)) = \upsilon'(f(x))$ is an axiom of umbral morphisms. \qedhere
+\end{proof}
+
 \begin{definition}
     We define a function $\Lambda^{tr} : R \to S^{\mathbb{N}}$, called the \emph{$\lambda$-points}, of an element in $R$, by the $k$-th index of $\Lambda^{tr}(r) = tr(\lambda^k(r))$. 
 \end{definition}
