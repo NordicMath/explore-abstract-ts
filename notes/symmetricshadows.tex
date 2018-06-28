@@ -32,6 +32,16 @@
   For each symmetric shadow $\Gamma = (R, S, \upsilon)$ there is an anchored umbral morphism $\Psi_{\Gamma} : \Gamma \to \Upsilon_S$. The symmetry part is defined by $\Psi_{\Gamma}(r) = k \mapsto \upsilon(\psi^k(r))$. We call $\Psi_{\Gamma}(r)$ the $\psi$-points of $r$.
 \end{propdef}
 
+\begin{propdef} \label{propdef:upsilonUniversalDiagram}
+  For each morphism $\phi : \Gamma \to \Gamma'$ we get a commuting diagram:
+  \begin{center}
+    \begin{tikzcd}
+      \Gamma \arrow[d, "\Psi_\Gamma"] \arrow[r, "\phi"] & \Gamma' \arrow[d, "\Psi_{\Gamma'}"] \\
+      \Upsilon_R \arrow[r, "\Upsilon_{\phi}"] & \Upsilon_{R'}
+    \end{tikzcd}
+  \end{center}
+  where $R$ and $R'$ are resp. the shadow realms of $\Gamma$ and $\Gamma'$ and $\Upsilon_{\phi}$ is defined as the morphism induced from applying the shadow part of $\phi$ to each point in the symmetry-realm of $\Upsilon_R$ and of course as well to its shadow realm.
+\end{propdef}
 
 \begin{definition}
     We define a function $\Lambda^{tr} : R \to S^{\mathbb{N}}$, called the \emph{$\lambda$-points}, of an element in $R$, by the $k$-th index of $\Lambda^{tr}(r) = tr(\lambda^k(r))$. 
