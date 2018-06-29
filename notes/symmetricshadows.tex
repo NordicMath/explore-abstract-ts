@@ -107,6 +107,14 @@
   It is clear that since $g$ is injective, so is $\Upsilon_{\phi}$. Suppose we have some non-zero element $r$ in the symmetry part of $\Gamma$ such that $f(r) = 0$. We further see that $\Psi_{\Gamma'}(f(r)) = (k \mapsto 0)$. However, by the diagram, $\Psi_{\Gamma'}(f(r)) = \Upsilon_\phi(\Psi_{\Gamma}(r))$ and so we get $\Upsilon_\phi(\Psi_{\Gamma}(r)) = (k \mapsto 0)$. Since both of these are injective we get $r = 0$, which is a contradiction. Hence $\phi$ has injective symmetry-part, and is thus injective. \qedhere
 \end{proof}
 
+\begin{propdef}
+  For a non-nebular element $x$ of a given symetric shadow $\Gamma = (R, S, \upsilon)$, we may define the \emph{penumbra} $k$ as the smallest positive integer such that $\lambda^k(x)$ is not in $\ker \upsilon$. \todo{Do we use this?}
+\end{propdef}
+
+\begin{proof}
+  Suppose there were no such integer $k$. Then clearly, the $\lambda$-points are zero. The arithmetic connection in $\Upsilon_S$ then implies that the $\psi$-points are zero, however then $x$ is nebular.
+\end{proof}
+
 
 \begin{definition}
   We define the \emph{Tannakian shadow} $TS(M \subset R)$ as the triple $(TS(M), R, tr)$, where $tr$ is the embedding into $TS(R)$ and then applying Tannakian symbol trace. 
