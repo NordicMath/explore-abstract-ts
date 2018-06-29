@@ -144,3 +144,14 @@
 \begin{proposition}
   If $M$ does not contain zero, then $TS(M \subset R)$ is faithful. 
 \end{proposition}
+
+\begin{proof}
+  Since $M$ does not contain zero, we see that no line-elements $\{x\}/\varnothing$ are in $\ker tr$, as $tr(\{x\}/\varnothing) = x \ne 0$. This implies that no symbols $A/\varnothing$ may be contained in the nebula, as $\lambda^{\#A}(A/\varnothing) = \{\prod A\}/\varnothing \notin \ker tr$. This also implies that $A/\varnothing$ always has dimension $\#A$, considering $\lambda^k(A/\varnothing) = \varnothing/\varnothing$ whenever $k > \#A$.
+   \todo{finish}
+  %Suppose any non-zero symbol $X = A/B$ is in the nebula. We may assume that $\#A, \#B \ge 1$, as we showed just now. As $X = A/B$ is nebular, we get that $A/\varnothing$ and $B/\varnothing$ have the same $\psi$-points, and by arithmetic connection\todo{check} , the same $\lambda$-points. This implies $\#A = \#B$, because as we just saw, the dimension of $A/\varnothing$ is $\#A$ and equal $\lambda$-points imply equal dimension. Now just use $e_k(A) = e_k(B)$-type  reasoning.
+  
+  %We have $\lambda_t(X) = \lambda_t$
+  
+  %Now suppose a non-zero $X$ is nebular. Since the nebula is contained in $\ker tr$, we get $tr(X) = 0$, and since it must contain an element downstairs (it is non-zero and may not be $A/\varnothing$), we may rewrite $X = Y + \varnothing/\{tr(Y)\}$. Note that $tr(Y)$ must be in $M$, simply by virtue of $X$ being nebular, which further give $tr(Y) \ne 0$. This also means that for any $k$, we have $tr(\psi^k(X)) = 0$. By using our substitution, we get $tr(\psi^k(Y + \varnothing/\{tr(Y)\})) = tr(\psi^k(Y)) + tr(\psi^k(\varnothing/\{tr(Y)\})) = tr(\psi^k(Y)) - tr(Y)^k = tr(\psi^k(Y)) - tr(Y^k) = tr(\psi^k(Y) - Y^k) = 0$.
+\end{proof}
+
