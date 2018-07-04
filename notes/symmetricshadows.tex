@@ -108,15 +108,15 @@
 \end{proof}
 
 \begin{definition}
-  For any commutative ring $S$ inside some $\mathbb{Q}$-algebra $F$, we say a $\lambda$-ring $R$ is \emph{$S$-umbral} (with $\Gamma$) if there exists a faithful symmetric shadow $\Gamma$ over $F$ such that all the $\lambda$-points are contained in $S$. 
+  For any sub-ring $S$ of the shadow ring of $\Gamma$, we say that $\Gamma$ has points if for any natural operation $\mu$ the $\mu$-point of any $x$ is always in $S$.
 \end{definition}
 
 \begin{proposition}
-  If $R$ is $S$-umbral with $\Gamma$ then for any natural operation $\mu$, the $\mu$-shadow of any $r$ is contained in $S$.
+  If the $\lambda$-points of each element of $\Gamma$ are contained in $S$, then $\Gamma$ has points in $S$.
 \end{proposition}
 
 \begin{proof}
-  A natural operation can be written as a polynomial with integral coefficients with the $\lambda$-operations as variables \todo{ref Yau}. We use this to write $\mu(r) = f(\lambda^1(r), \ldots, \lambda^n(r))$ for some polynomial $f$ and number $n$. The $\mu$-shadow of $r$ is defined as $\upsilon(\mu(r))$. If we insert our polynomial we get $\upsilon(f(\lambda^1(r), \ldots, \lambda^n(r)))$, and as $\upsilon$ is a ring-homomorphism, we may move its application to each of the variables and get $f(\upsilon(\lambda^1(r)), \ldots, \upsilon(\lambda^n(r)))$. Since all of the $\lambda$-points $\upsilon(\lambda^k(r))$ are contained in $S$, so is the $\mu$-point as all the variables in the integral polynomial are in $S$, and $S$ is closed under the addition and multiplication the polynomial performs. 
+  A natural operation can be written as a polynomial with integral coefficients with the $\lambda$-operations as variables \todo{ref Yau}. We use this to write $\mu(r) = f(\lambda^1(r), \ldots, \lambda^n(r))$ for some polynomial $f$ and number $n$. The $\mu$-shadow of $r$ is defined as $\upsilon(\mu(r))$. If we insert our polynomial we get $\upsilon(f(\lambda^1(r), \ldots, \lambda^n(r)))$, and as $\upsilon$ is a ring-homomorphism, we may move its application to each of the variables and get $f(\upsilon(\lambda^1(r)), \ldots, \upsilon(\lambda^n(r)))$. Since all of the $\lambda$-points $\upsilon(\lambda^k(r))$ are contained in $S$, so is the $\mu$-point as all the variables in the integral polynomial are in $S$, and $S$ is closed under the addition and multiplication the polynomial performs. Thus, $\Gamma$ has points in $S$.
 \end{proof}
 
 \begin{propdef}
