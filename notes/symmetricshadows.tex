@@ -49,18 +49,6 @@ All symmetric shadows in this section are local.
   Say $\phi = (f, g)$. We need to show that $\Upsilon_{g} \circ \Psi_\Gamma = \Psi_{\Gamma'} \circ \phi$. The shadow part is given by $g \circ id = id \circ g$, which is of course true, and the symmetric part is given by $g^{\N} \circ (r \mapsto k \mapsto \upsilon(\psi^k(r))) = (r \mapsto k \mapsto \upsilon'(\psi^k(r))) \circ f$. If we type this out using a single element $r$ and $k$, we get $g(\upsilon(\psi^k(r))) = \upsilon'(\psi^k(f(r)))) = \upsilon'(f(\psi^k(r)))$. This is true because $g(\upsilon(x)) = \upsilon'(f(x))$ is an axiom of umbral morphisms. \qedhere
 \end{proof}
 
-\begin{proposition} \label{prop:naturalCommutativity}
-  Take some natural operation $\mu$ on $\lambda$-rings and a symmetric shadow $\Gamma = (R, S, \upsilon)$. Let $\phi$ denote the symmetry part of $\Upsilon_\Gamma$. Then we have $\phi \circ \mu_R = \mu_{S^{\N}} \circ \phi$. In words, natural operations may be applied after moving to the universal $\Upsilon$ symmetric shadow, and yield the same result as if it had been applied first.
-\end{proposition}
-
-\begin{proof}
-  By definition, $\mu$ commutes with any $\lambda$-homomorphism. $\phi$ is by definition a $\lambda$-homomorphism. \qedhere
-\end{proof}
-
-\begin{definition}
-  For each natural operation $\mu$ on $\lambda$-rings, and element $z \in (R, S, \upsilon)$ of some symmetric shadow, define the $\mu$-shadow of $z$ as the value $\upsilon(\mu(z))$. In particular the $\lambda$-shadows of $z$ refer to the sequence where each index is the $\lambda^k$-shadow. A similar notation for $\psi$-operations of course coincides with the previously defined notion of $\psi$-shadows.
-\end{definition}
-
 %\begin{proposition}
   %If $z$ has finite dimension $k$ then the $\lambda^k$-shadow is non-zero and the $\lambda^i$-shadow is zero for all $i > k$.
   %In $\Upsilon_S$ the dimension of an element $z$ is the largest $i$ such that the $\lambda^i$-shadow is non-zero. %If no such $i$ exists, then the dimension is infinite. <- TODO: generalise
@@ -123,22 +111,6 @@ All symmetric shadows in this section are local.
   It is clear that since $g$ is injective, so is $\Upsilon_{g}$. Suppose we have some non-zero element $r$ in the symmetry part of $\Gamma$ such that $f(r) = 0$. We further see that $\Psi_{\Gamma'}(f(r)) = (k \mapsto 0)$. However, by the diagram, $\Psi_{\Gamma'}(f(r)) = \Upsilon_g(\Psi_{\Gamma}(r))$ and so we get $\Upsilon_g(\Psi_{\Gamma}(r)) = (k \mapsto 0)$. Since both of these are injective we get $r = 0$, which is a contradiction. Hence $\phi$ has injective symmetry-part, and is thus injective. \qedhere
 \end{proof}
 
-\begin{definition}
-  For any sub-ring $S$ of the shadow ring of $\Gamma$, we say that $\Gamma$ has points if for any natural operation $\mu$ the $\mu$-point of any $x$ is always in $S$.
-\end{definition}
-
-\begin{proposition}
-  If the $\lambda$-points of each element of $\Gamma$ are contained in $S$, then $\Gamma$ has points in $S$.
-\end{proposition}
-
-\begin{proof}
-  A natural operation can be written as a polynomial with integral coefficients with the $\lambda$-operations as variables \todo{ref Yau}. We use this to write $\mu(r) = f(\lambda^1(r), \ldots, \lambda^n(r))$ for some polynomial $f$ and number $n$. The $\mu$-shadow of $r$ is defined as $\upsilon(\mu(r))$. If we insert our polynomial we get $\upsilon(f(\lambda^1(r), \ldots, \lambda^n(r)))$, and as $\upsilon$ is a ring-homomorphism, we may move its application to each of the variables and get $f(\upsilon(\lambda^1(r)), \ldots, \upsilon(\lambda^n(r)))$. Since all of the $\lambda$-points $\upsilon(\lambda^k(r))$ are contained in $S$, so is the $\mu$-point as all the variables in the integral polynomial are in $S$, and $S$ is closed under the addition and multiplication the polynomial performs. Thus, $\Gamma$ has points in $S$.
-\end{proof}
-
-%\begin{propdef}
-  %There is a bijection between the $\psi$-points and the $\lambda$-points in any symmetric shadow. This is given by an arithmetic connection we call the Bell derivative.
-%\end{propdef}
-
 \begin{propdef}
   For a non-nebular element $x$ of a given symetric shadow $\Gamma = (R, S, \upsilon)$, we may define the \emph{penumbra} $k$ as the smallest positive integer such that $\lambda^k(x)$ is not in $\ker \upsilon$. \todo{Do we use this?}
 \end{propdef}
@@ -187,6 +159,34 @@ All symmetric shadows in this section are local.
 
 
 \subsection{Natural operations}
+
+\begin{proposition} \label{prop:naturalCommutativity}
+  Take some natural operation $\mu$ on $\lambda$-rings and a symmetric shadow $\Gamma = (R, S, \upsilon)$. Let $\phi$ denote the symmetry part of $\Upsilon_\Gamma$. Then we have $\phi \circ \mu_R = \mu_{S^{\N}} \circ \phi$. In words, natural operations may be applied after moving to the universal $\Upsilon$ symmetric shadow, and yield the same result as if it had been applied first.
+\end{proposition}
+
+\begin{proof}
+  By definition, $\mu$ commutes with any $\lambda$-homomorphism. $\phi$ is by definition a $\lambda$-homomorphism. \qedhere
+\end{proof}
+
+\begin{definition}
+  For each natural operation $\mu$ on $\lambda$-rings, and element $z \in (R, S, \upsilon)$ of some symmetric shadow, define the $\mu$-shadow of $z$ as the value $\upsilon(\mu(z))$. In particular the $\lambda$-shadows of $z$ refer to the sequence where each index is the $\lambda^k$-shadow. A similar notation for $\psi$-operations of course coincides with the previously defined notion of $\psi$-shadows.
+\end{definition}
+
+\begin{definition}
+  For any sub-ring $S$ of the shadow ring of $\Gamma$, we say that $\Gamma$ has points if for any natural operation $\mu$ the $\mu$-point of any $x$ is always in $S$.
+\end{definition}
+
+\begin{proposition}
+  If the $\lambda$-points of each element of $\Gamma$ are contained in $S$, then $\Gamma$ has points in $S$.
+\end{proposition}
+
+\begin{proof}
+  A natural operation can be written as a polynomial with integral coefficients with the $\lambda$-operations as variables \todo{ref Yau}. We use this to write $\mu(r) = f(\lambda^1(r), \ldots, \lambda^n(r))$ for some polynomial $f$ and number $n$. The $\mu$-shadow of $r$ is defined as $\upsilon(\mu(r))$. If we insert our polynomial we get $\upsilon(f(\lambda^1(r), \ldots, \lambda^n(r)))$, and as $\upsilon$ is a ring-homomorphism, we may move its application to each of the variables and get $f(\upsilon(\lambda^1(r)), \ldots, \upsilon(\lambda^n(r)))$. Since all of the $\lambda$-points $\upsilon(\lambda^k(r))$ are contained in $S$, so is the $\mu$-point as all the variables in the integral polynomial are in $S$, and $S$ is closed under the addition and multiplication the polynomial performs. Thus, $\Gamma$ has points in $S$.
+\end{proof}
+
+%\begin{propdef}
+  %There is a bijection between the $\psi$-points and the $\lambda$-points in any symmetric shadow. This is given by an arithmetic connection we call the Bell derivative.
+%\end{propdef}
 
 \subsection{Tannakian shadows}
 
