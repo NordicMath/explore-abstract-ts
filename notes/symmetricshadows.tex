@@ -25,7 +25,7 @@
 \end{remark}
 
 \begin{definition}
-  We define the univeral symmetric shadow $\Upsilon_R = (R^{\mathbb{N}}, R, f \mapsto f(1))$ where $R^{\mathbb{N}}$ is equipped with pointwise addition and multiplication and Adams operations corresponding to compression, meaning $\psi^k(f) : n \mapsto f(nk)$.
+  We define the univeral symmetric shadow $\Upsilon_R = (R^{\N}, R, f \mapsto f(1))$ where $R^{\N}$ is equipped with pointwise addition and multiplication and Adams operations corresponding to compression, meaning $\psi^k(f) : n \mapsto f(nk)$.
 \end{definition}
 
 \begin{propdef}
@@ -44,11 +44,11 @@
 \end{propdef}
 
 \begin{proof}
-  Say $\phi = (f, g)$. We need to show that $\Upsilon_{\phi} \circ \Psi_\Gamma = \Psi_{\Gamma'} \circ \phi$. The shadow part is given by $g \circ id = id \circ g$, which is of course true, and the symmetric part is given by $g^{\mathbb{N}} \circ (r \mapsto k \mapsto \upsilon(\psi^k(r))) = (r \mapsto k \mapsto \upsilon'(\psi^k(r))) \circ f$. If we type this out using a single element $r$ and $k$, we get $g(\upsilon(\psi^k(r))) = \upsilon'(\psi^k(f(r)))) = \upsilon'(f(\psi^k(r)))$. This is true because $g(\upsilon(x)) = \upsilon'(f(x))$ is an axiom of umbral morphisms. \qedhere
+  Say $\phi = (f, g)$. We need to show that $\Upsilon_{\phi} \circ \Psi_\Gamma = \Psi_{\Gamma'} \circ \phi$. The shadow part is given by $g \circ id = id \circ g$, which is of course true, and the symmetric part is given by $g^{\N} \circ (r \mapsto k \mapsto \upsilon(\psi^k(r))) = (r \mapsto k \mapsto \upsilon'(\psi^k(r))) \circ f$. If we type this out using a single element $r$ and $k$, we get $g(\upsilon(\psi^k(r))) = \upsilon'(\psi^k(f(r)))) = \upsilon'(f(\psi^k(r)))$. This is true because $g(\upsilon(x)) = \upsilon'(f(x))$ is an axiom of umbral morphisms. \qedhere
 \end{proof}
 
 \begin{proposition} \label{prop:naturalCommutativity}
-  Take some natural operation $\mu$ on $\lambda$-rings and a symmetric shadow $\Gamma = (R, S, \upsilon)$. Let $\phi$ denote the symmetry part of $\Upsilon_\Gamma$. Then we have $\phi \circ \mu_R = \mu_{S^{\mathbb{N}}} \circ \phi$. In words, natural operations may be applied after moving to the universal $\Upsilon$ symmetric shadow, and yield the same result as if it had been applied first.
+  Take some natural operation $\mu$ on $\lambda$-rings and a symmetric shadow $\Gamma = (R, S, \upsilon)$. Let $\phi$ denote the symmetry part of $\Upsilon_\Gamma$. Then we have $\phi \circ \mu_R = \mu_{S^{\N}} \circ \phi$. In words, natural operations may be applied after moving to the universal $\Upsilon$ symmetric shadow, and yield the same result as if it had been applied first.
 \end{proposition}
 
 \begin{proof}
