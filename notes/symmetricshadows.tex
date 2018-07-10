@@ -4,10 +4,10 @@
 \subsection{Local Symmetric Shadows}
 All symmetric shadows in this section are local.
 \begin{definition}
-  A \emph{(local) symmetric shadow} is a triple $(R, S, \upsilon)$ where $R$ is a torsion-free $\lambda$-ring called the \emph{symmetry realm}, $S$ is a commutative $\Q$-algebra called the \emph{shadow realm}, and $\upsilon: R \to S$ is a ring-homomorphism called the \emph{umbra}. 
+  A \emph{(local) symmetric shadow} is a triple $(R, S, \upsilon)$ where $R$ is a torsion-free $\lambda$-ring called the \emph{symmetry realm}, $S$ is an integral domain of characteristic $0$ called the \emph{shadow domain}, and $\upsilon: R \to S$ is a ring-homomorphism called the \emph{umbra}. 
   \begin{enumerate}
     \item An \emph{element} of the symmetric shadow refers to an element of the symmetry realm. 
-    \item A symmetric shadow \emph{over} $S$ has $S$ as shadow realm, and one \emph{under} $R$ has $R$ as symmetry realm.
+    \item A symmetric shadow \emph{over} $S$ has $S$ as shadow domain, and one \emph{under} $R$ has $R$ as symmetry realm.
   \end{enumerate}
 \end{definition}
 
@@ -42,7 +42,7 @@ All symmetric shadows in this section are local.
       \Upsilon_R \arrow[r, "\Upsilon_{g}"] & \Upsilon_{R'}
     \end{tikzcd}
   \end{center}
-  where $g : R \to R'$ is the shadow part of $\phi$ and $\Upsilon_{g}$ is defined as the morphism induced from applying the $g$ to each point in the symmetry-realm of $\Upsilon_R$ and of course as well to its shadow realm.
+  where $g : R \to R'$ is the shadow part of $\phi$ and $\Upsilon_{g}$ is defined as the morphism induced from applying the $g$ to each point in the symmetry-realm of $\Upsilon_R$ and of course as well to its shadow domain.
 \end{propdef}
 
 \begin{proof}
