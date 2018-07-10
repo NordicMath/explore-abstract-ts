@@ -37,14 +37,14 @@
   \begin{center}
     \begin{tikzcd}
       \Gamma \arrow[d, "\Psi_\Gamma"] \arrow[r, "\phi"] & \Gamma' \arrow[d, "\Psi_{\Gamma'}"] \\
-      \Upsilon_R \arrow[r, "\Upsilon_{\phi}"] & \Upsilon_{R'}
+      \Upsilon_R \arrow[r, "\Upsilon_{g}"] & \Upsilon_{R'}
     \end{tikzcd}
   \end{center}
-  where $R$ and $R'$ are resp. the shadow realms of $\Gamma$ and $\Gamma'$ and $\Upsilon_{\phi}$ is defined as the morphism induced from applying the shadow part of $\phi$ to each point in the symmetry-realm of $\Upsilon_R$ and of course as well to its shadow realm.
+  where $g : R \to R'$ is the shadow part of $\phi$ and $\Upsilon_{g}$ is defined as the morphism induced from applying the $g$ to each point in the symmetry-realm of $\Upsilon_R$ and of course as well to its shadow realm.
 \end{propdef}
 
 \begin{proof}
-  Say $\phi = (f, g)$. We need to show that $\Upsilon_{\phi} \circ \Psi_\Gamma = \Psi_{\Gamma'} \circ \phi$. The shadow part is given by $g \circ id = id \circ g$, which is of course true, and the symmetric part is given by $g^{\N} \circ (r \mapsto k \mapsto \upsilon(\psi^k(r))) = (r \mapsto k \mapsto \upsilon'(\psi^k(r))) \circ f$. If we type this out using a single element $r$ and $k$, we get $g(\upsilon(\psi^k(r))) = \upsilon'(\psi^k(f(r)))) = \upsilon'(f(\psi^k(r)))$. This is true because $g(\upsilon(x)) = \upsilon'(f(x))$ is an axiom of umbral morphisms. \qedhere
+  Say $\phi = (f, g)$. We need to show that $\Upsilon_{g} \circ \Psi_\Gamma = \Psi_{\Gamma'} \circ \phi$. The shadow part is given by $g \circ id = id \circ g$, which is of course true, and the symmetric part is given by $g^{\N} \circ (r \mapsto k \mapsto \upsilon(\psi^k(r))) = (r \mapsto k \mapsto \upsilon'(\psi^k(r))) \circ f$. If we type this out using a single element $r$ and $k$, we get $g(\upsilon(\psi^k(r))) = \upsilon'(\psi^k(f(r)))) = \upsilon'(f(\psi^k(r)))$. This is true because $g(\upsilon(x)) = \upsilon'(f(x))$ is an axiom of umbral morphisms. \qedhere
 \end{proof}
 
 \begin{proposition} \label{prop:naturalCommutativity}
@@ -101,10 +101,10 @@
   \begin{center}
     \begin{tikzcd}
       \Gamma \arrow[d, hook, "\Psi_\Gamma"] \arrow[r, "\phi"] & \Gamma' \arrow[d, "\Psi_{\Gamma'}"] \\
-      \Upsilon_R \arrow[r, hook, "\Upsilon_{\phi}"] & \Upsilon_{R'}
+      \Upsilon_R \arrow[r, hook, "\Upsilon_{g}"] & \Upsilon_{R'}
     \end{tikzcd}
   \end{center}
-  It is clear that since $g$ is injective, so is $\Upsilon_{\phi}$. Suppose we have some non-zero element $r$ in the symmetry part of $\Gamma$ such that $f(r) = 0$. We further see that $\Psi_{\Gamma'}(f(r)) = (k \mapsto 0)$. However, by the diagram, $\Psi_{\Gamma'}(f(r)) = \Upsilon_\phi(\Psi_{\Gamma}(r))$ and so we get $\Upsilon_\phi(\Psi_{\Gamma}(r)) = (k \mapsto 0)$. Since both of these are injective we get $r = 0$, which is a contradiction. Hence $\phi$ has injective symmetry-part, and is thus injective. \qedhere
+  It is clear that since $g$ is injective, so is $\Upsilon_{g}$. Suppose we have some non-zero element $r$ in the symmetry part of $\Gamma$ such that $f(r) = 0$. We further see that $\Psi_{\Gamma'}(f(r)) = (k \mapsto 0)$. However, by the diagram, $\Psi_{\Gamma'}(f(r)) = \Upsilon_g(\Psi_{\Gamma}(r))$ and so we get $\Upsilon_g(\Psi_{\Gamma}(r)) = (k \mapsto 0)$. Since both of these are injective we get $r = 0$, which is a contradiction. Hence $\phi$ has injective symmetry-part, and is thus injective. \qedhere
 \end{proof}
 
 \begin{definition}
